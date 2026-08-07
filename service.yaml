@@ -1,0 +1,14 @@
+name: lab-results-service
+port: 8401
+lang: python
+description: "lab-results-service \u2014 domain: lab"
+http_deps:
+- lab-orders-service
+- reference-ranges-service
+- patients-service
+- notifications-service
+- audit-log-service
+publishes:
+- lab.result.available
+- audit.event
+subscribes: []
