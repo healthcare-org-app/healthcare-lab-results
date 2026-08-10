@@ -1,7 +1,7 @@
 services:
   lab-results-service:
     build: .
-    container_name: ${NAME_UNDERSCORE}
+    container_name: lab_results_service
     depends_on:
       postgres:
         condition: service_healthy
